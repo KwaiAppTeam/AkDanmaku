@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  tools:background="#222222"
+  tools:ignore="ContentDescription,HardcodedText">
+
+  <TextView
+    android:id="@+id/txtDanmakuTime"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    android:text="00::00"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="@id/seekbar"/>
+
+  <SeekBar
+    android:id="@+id/seekbar"
+    android:layout_width="0dp"
+    android:layout_height="24dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/txtDanmakuTime"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/txtPlayInfo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintTop_toBottomOf="@id/txtDanmakuTime"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <ImageView
+    android:id="@+id/playButton"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_marginStart="14dp"
+    android:scaleType="center"
+    android:src="@android:drawable/ic_media_play"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/txtPlayInfo" />
+
+  <TextView
+    android:id="@+id/speedView"
+    android:layout_width="96dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="9dp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:text="Speed=1.0x"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/playButton"
+    app:layout_constraintTop_toTopOf="@id/playButton" />
+
+  <Button
+    android:id="@+id/send"
+    style="@style/Widget.AppCompat.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="send"
+    app:layout_constraintBottom_toBottomOf="@id/playButton"
+    app:layout_constraintStart_toEndOf="@id/speedView"
+    app:layout_constraintTop_toTopOf="@id/playButton" />
+
+  <Button
+    android:id="@+id/changeSize"
+    style="@style/Widget.AppCompat.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Size"
+    app:layout_constraintBottom_toBottomOf="@id/playButton"
+    app:layout_constraintStart_toEndOf="@id/send"
+    app:layout_constraintTop_toTopOf="@id/playButton" />
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/rollingSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="true"
+    android:text="Rolling"
+    app:layout_constraintEnd_toStartOf="@id/topSwitch"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/playButton" />
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/topSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="true"
+    android:text="Top"
+    app:layout_constraintEnd_toStartOf="@id/bottomSwitch"
+    app:layout_constraintStart_toEndOf="@id/rollingSwitch"
+    app:layout_constraintTop_toBottomOf="@id/playButton" />
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/bottomSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="true"
+    android:text="Bottom"
+    app:layout_constraintEnd_toStartOf="@id/colorSwitch"
+    app:layout_constraintStart_toEndOf="@id/topSwitch"
+    app:layout_constraintTop_toBottomOf="@id/playButton" />
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/colorSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="true"
+    android:text="Color"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/bottomSwitch"
+    app:layout_constraintTop_toBottomOf="@id/playButton" />
+
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/visibilitySwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="true"
+    android:text="Visible"
+    android:layout_marginHorizontal="16dp"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/overlapSwitch"
+    app:layout_constraintTop_toBottomOf="@id/rollingSwitch"/>
+
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/overlapSwitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:checked="false"
+    android:text="Overlap"
+    app:layout_constraintStart_toEndOf="@id/visibilitySwitch"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rollingSwitch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

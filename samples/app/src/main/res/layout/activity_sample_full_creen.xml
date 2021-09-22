@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#222222"
+  tools:ignore="HardcodedText,LabelFor,Autofill">
+
+  <include
+    android:id="@+id/controllerLayout"
+    layout="@layout/danmaku_controller_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+  <com.kuaishou.akdanmaku.library.ui.DanmakuView
+    android:id="@+id/danmakuView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@id/controllerLayout"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+    android:id="@+id/stepDeltaTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:padding="14dp"
+    android:text="16"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/txtTimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="00:00"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toTopOf="@id/controllerLayout"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <Button
+    android:id="@+id/stepButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="step"
+    app:layout_constraintStart_toStartOf="@id/stepDeltaTime"
+    app:layout_constraintTop_toBottomOf="@id/stepDeltaTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
