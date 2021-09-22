@@ -1,12 +1,9 @@
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Android-brightgreen.svg)]()
-
-// TODO. 上传 github 后提供对应目录
+[![Platform](https://img.shields.io/badge/Platform-Android-brightgreen.svg)](https://github.com/KwaiAppTeam/AkDanmaku)
 
 # AkDanmaku
 
-<img src="./assets/resources/logo_kwai.png" width="256">
-<img src="./assets/resources/logo_acfun.png" width="256">
+<img src="./assets/resources/logo_kwai.png" width="256"> <img src="./assets/resources/logo_acfun.png" width="256">
 
 ## 简介
 灵感来源于 [AcFun](https://www.acfun.cn/) 视频弹幕场景，基于游戏引擎架构思想打造的一款 Android Native 弹幕引擎。
@@ -36,7 +33,7 @@ AkDanmaku 以 MIT 证书开源，详情参见 [LICENSE](./LICENSE)。
 
 
 ## 问题 & 反馈
-欢迎提 [issues](// TODO. 上传 github 后提供对应链接) 提问反馈。 
+欢迎提 [issues](https://github.com/KwaiAppTeam/AkDanmaku/issues) 提问反馈。 
 
 ## 联系我们
 
