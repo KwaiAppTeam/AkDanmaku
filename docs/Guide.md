@@ -16,9 +16,7 @@ AkDanmaku 1.0 Android 接入指南
 ### 引用
 #### gradle
 
-```gradle
-implementation "com.kuaishou.akdanmaku:akdanmaku:$akdanmaku_version"
-```
+> 暂时没有 centerMaven，请使用源码依赖
 
 ### 反混淆
 
