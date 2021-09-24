@@ -1,8 +1,6 @@
 AkDanmaku 1.0 Android 接入指南
 ======
 
-[[_TOC_]]
-
 ## 背景
 
 在经历总结和调研后，我们提出了基于 Android、iOS 各自 native 平台打造自研引擎对图形化应用进行统一处理和封装的方案，以及在此基础之上的整个弹幕流程的重新设计与实现。
@@ -16,7 +14,19 @@ AkDanmaku 1.0 Android 接入指南
 ### 引用
 #### gradle
 
-> 暂时没有 centerMaven，请使用源码依赖
+```shell
+git clone https://github.com/KwaiAppTeam/AkDanmaku.git
+```
+
+```groovy
+// settings.gradle
+include ':AkDanmaku'
+project(':AkDanmaku').projectDir = new File(/* 路径 */)
+include ':AkDanmaku:library'
+
+// build.gradle
+implementation project('AkDanmaku:library')
+```
 
 ### 反混淆
 
