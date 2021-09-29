@@ -14,18 +14,17 @@ AkDanmaku 1.0 Android 接入指南
 ### 引用
 #### gradle
 
-```shell
-git clone https://github.com/KwaiAppTeam/AkDanmaku.git
-```
-
 ```groovy
-// settings.gradle
-include ':AkDanmaku'
-project(':AkDanmaku').projectDir = new File(/* 路径 */)
-include ':AkDanmaku:library'
+// 顶层 build.gradle
+repositories {
+    mavenCentral()
+}
 
 // build.gradle
-implementation project('AkDanmaku:library')
+
+dependencies {
+    implementation 'com.kuaishou:akdanmaku:1.0.3'
+}
 ```
 
 ### 反混淆

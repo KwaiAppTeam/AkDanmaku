@@ -31,7 +31,7 @@ android {
 
 dependencies {
 
-    implementation project(':library')
+    implementation 'com.kuaishou:akdanmaku:1.0.3'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.6.0'

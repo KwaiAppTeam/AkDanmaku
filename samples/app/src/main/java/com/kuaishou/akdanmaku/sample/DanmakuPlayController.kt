@@ -12,12 +12,12 @@ import android.view.View
 import android.view.ViewConfiguration
 import android.widget.*
 import androidx.appcompat.widget.SwitchCompat
-import com.kuaishou.akdanmaku.library.DanmakuConfig
-import com.kuaishou.akdanmaku.library.data.DanmakuItemData
-import com.kuaishou.akdanmaku.library.ecs.DanmakuEngine
-import com.kuaishou.akdanmaku.library.ecs.component.action.Actions
-import com.kuaishou.akdanmaku.library.ecs.component.filter.*
-import com.kuaishou.akdanmaku.library.ui.DanmakuPlayer
+import com.kuaishou.akdanmaku.DanmakuConfig
+import com.kuaishou.akdanmaku.data.DanmakuItemData
+import com.kuaishou.akdanmaku.ecs.DanmakuEngine
+import com.kuaishou.akdanmaku.ecs.component.action.Actions
+import com.kuaishou.akdanmaku.ecs.component.filter.*
+import com.kuaishou.akdanmaku.ui.DanmakuPlayer
 import kotlin.random.Random
 
 @SuppressLint("ClickableViewAccessibility")

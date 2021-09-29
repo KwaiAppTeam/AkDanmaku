@@ -10,12 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.kuaishou.akdanmaku.library.data.DanmakuItemData
-import com.kuaishou.akdanmaku.library.ecs.DanmakuEngine
-import com.kuaishou.akdanmaku.library.render.SimpleRenderer
-import com.kuaishou.akdanmaku.library.render.TypedDanmakuRenderer
-import com.kuaishou.akdanmaku.library.ui.DanmakuPlayer
-import com.kuaishou.akdanmaku.library.ui.DanmakuView
+import com.kuaishou.akdanmaku.data.DanmakuItemData
+import com.kuaishou.akdanmaku.ecs.DanmakuEngine
+import com.kuaishou.akdanmaku.render.SimpleRenderer
+import com.kuaishou.akdanmaku.render.TypedDanmakuRenderer
+import com.kuaishou.akdanmaku.ui.DanmakuPlayer
+import com.kuaishou.akdanmaku.ui.DanmakuView
 
 class SampleFullScreenActivity : AppCompatActivity() {
 

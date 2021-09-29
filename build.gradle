@@ -1,27 +1,20 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext {
-        kotlin_version = "1.5.21"
+        kotlin_version = "1.5.30"
         // LibGdx sdk version.
         gdxVersion = '1.10.0'
         ashleyVersion = '1.7.3'
     }
 
     repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
         mavenCentral()
         google()
-
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.1'
+        classpath 'com.android.tools.build:gradle:7.0.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -41,3 +34,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

@@ -1,4 +1,5 @@
 apply from: rootProject.file('gradle/library.gradle')
+apply from: rootProject.file('gradle/mavenCentral-publish.gradle')
 
 configurations { natives }
 

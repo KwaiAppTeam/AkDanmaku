@@ -6,11 +6,11 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.graphics.drawable.Drawable
 import androidx.core.graphics.withTranslation
-import com.kuaishou.akdanmaku.library.DanmakuConfig
-import com.kuaishou.akdanmaku.library.data.DanmakuItem
-import com.kuaishou.akdanmaku.library.render.SimpleRenderer
-import com.kuaishou.akdanmaku.library.ui.DanmakuDisplayer
-import com.kuaishou.akdanmaku.library.utils.Size
+import com.kuaishou.akdanmaku.DanmakuConfig
+import com.kuaishou.akdanmaku.data.DanmakuItem
+import com.kuaishou.akdanmaku.render.SimpleRenderer
+import com.kuaishou.akdanmaku.ui.DanmakuDisplayer
+import com.kuaishou.akdanmaku.utils.Size
 
 class UpLogoRenderer(val drawable: Drawable) : SimpleRenderer() {
 
