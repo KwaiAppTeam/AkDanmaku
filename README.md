@@ -24,6 +24,7 @@ _**Demo 展示**_
 
 ## 设计思想
 
+[开源弹幕库 AkDanmaku](https://mp.weixin.qq.com/s/j548QmUUQ0iK9AwZ0Y-Y3Q)
 
 ## 使用指南
 [AkDanmaku 接入指南](docs/Guide.md)
