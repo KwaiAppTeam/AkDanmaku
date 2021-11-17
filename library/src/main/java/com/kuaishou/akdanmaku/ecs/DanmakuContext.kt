@@ -131,7 +131,7 @@ internal class DanmakuContext(val renderer: DanmakuRenderer) {
       }
       sliceStartTime = startTime
       sliceEndTime = endTime
-      slice = danmakus.subList(startIndex, endIndex)
+      slice = danmakus.subList(startIndex, endIndex + 1)
       sliceIter = slice.iterator()
     }
   }

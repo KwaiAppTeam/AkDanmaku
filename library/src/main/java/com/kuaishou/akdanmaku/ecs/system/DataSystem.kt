@@ -165,7 +165,7 @@ internal class DataSystem(context: DanmakuContext) :
           DanmakuEngine.TAG,
           "[Data] update current slice [$startIndex, $endIndex] in time ($startTimeMills, $endTimeMills)"
         )
-        newData = sortedData.subList(startIndex, endIndex)
+        newData = sortedData.subList(startIndex, endIndex + 1)
         endTrace()
       }
 
