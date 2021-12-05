@@ -44,6 +44,12 @@ internal val DanmakuEntitySystem.danmakuDisplayer: DanmakuDisplayer
 internal val DanmakuEntitySystem.isPaused: Boolean
   get() = (engine as? DanmakuEngine)?.isPaused ?: true
 
+internal var DanmakuEntitySystem.waitToSeekLayout: Boolean
+  get() = danmakuTimer.waitToSeekLayout
+  set(value) {
+      danmakuTimer.waitToSeekLayout = value
+  }
+
 internal fun <T : DanmakuBaseComponent> DanmakuEntitySystem.createComponent(
   type: Class<T>,
   entity: Entity,

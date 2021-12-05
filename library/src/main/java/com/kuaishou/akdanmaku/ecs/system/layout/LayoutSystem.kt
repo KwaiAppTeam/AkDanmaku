@@ -133,7 +133,9 @@ internal class LayoutSystem(
         }
         layout.position.set(drawState.positionX, drawState.positionY)
       }
-    if (isPaused) {
+    if (waitToSeekLayout) {
+      waitToSeekLayout = false
+    } else if (isPaused) {
       if (needSync) {
         cacheManager.requestBuildSign()
       } else {
