@@ -248,7 +248,9 @@ internal class DataSystem(context: DanmakuContext) :
     currentData.data.addAll(currentItems)
     pendingCreateItems.addAll(currentItems)
 
-    shouldSort = pendingItems.isNotEmpty() || updateItems.isNotEmpty()
+    if (pendingItems.isNotEmpty() || updateItems.isNotEmpty()) {
+      shouldSort = true
+    }
     currentData.shouldSort = currentData.shouldSort || currentItems.isNotEmpty() || currentUpdateItems.isNotEmpty()
   }
 
