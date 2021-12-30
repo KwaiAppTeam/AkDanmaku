@@ -176,7 +176,7 @@ class DanmakuEngine(
   }
 
   internal fun seekTo(positionMs: Long) {
-    timer.start(positionMs)
+    timer.seekTo(positionMs)
     context.config.updateVisibility()
     context.config.updateRetainer()
     context.config.updateLayout()

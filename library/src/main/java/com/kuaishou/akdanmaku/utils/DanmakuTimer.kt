@@ -48,6 +48,11 @@ class DanmakuTimer {
   var paused = true
 
   /**
+   * 是否seek过但没有被布局画到屏幕上
+   */
+  var waitToSeekLayout = false
+
+  /**
    * 距上一次有效 update 的 deltaTime，单位：秒
    */
   var deltaTimeSeconds = 0f
@@ -65,6 +70,12 @@ class DanmakuTimer {
     currentNanoTime = startTimeMs * 1_000_000
     this.factor = factor
     lastFrameTime = getSystemTime()
+  }
+
+  fun seekTo(positionMs: Long) {
+    currentNanoTime = positionMs * 1_000_000
+    lastFrameTime = getSystemTime()
+    waitToSeekLayout = true
   }
 
   fun step(deltaTimeSeconds: Float? = null) {
